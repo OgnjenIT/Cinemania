@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINEMANIA - Main page</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="../images/logoStranica.png" alt="cinemaniaLogo" class="pageLogo" height="40">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home"><i class="fas fa-home"></i> HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#search"><i class="fas fa-search"></i> SEARCH</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#watchlist"><i class="fas fa-plus"></i> WATCHLIST</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#originals"><i class="fas fa-star"></i> ORIGINALS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#allMovies"><i class="fas fa-film"></i> MOVIES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#series"><i class="fas fa-tv"></i> SERIES</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   <content>
+   <div class="recomended-movies">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://static1.pocketlintimages.com/wordpress/wp-content/uploads/148310-tv-feature-what-order-should-you-watch-the-fast-and-furious-films-in-image1-rzgajwfo2x.jpg" class="d-block w-100 img-fluid" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="mb-0">Fast X</h5>
+              <p class="mb-0">Action, Drama | WATCH NOW <span class="action-price">50$</span> <span class="now-price">35$</span></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.ytimg.com/vi/2zDboCYG858/maxresdefault.jpg" class="d-block w-100 img-fluid" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="mb-0">The Mehanic 3</h5>
+              <p class="mb-0">Crime, Action</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://assets-global.website-files.com/64e961c3862892bff815289d/6547151cf69dd5d1128711e3_Fast-Five_1920x1080.jpg" class="d-block w-100 img-fluid" alt="...">
+            <div class="carousel-caption d-none d-md-block ">
+              <h5 class="mb-0">Fast Five</h5>
+              <p class="mb-0">Action, Drama, Crime</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+   </div>
+    </div>
+   <div class="movies container-fluid mt-4" id="allMovies">
+    <h3 class="movies-heading text-fade-in">All movies for you!</h3>
+
+        <div class="search-container m-5">
+          <form id="searchForm">
+            <h5 class="form-title">Search for your favorite movies! </h5>
+            <input type="search" name="searchMovie" id="search-movie" placeholder="Unesite naziv filma...">
+        </form>
+        </div>
+
+      
+
+
+
+
+
+
+
+
+      <div class="row g-4 allMoviesApi justify-content-center">
+                   <!-- <div class="col movie-card card">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMjMzODc2NzU5MV5BMl5BanBnXkFtZTgwNTMwMTE3NjM@._V1_SX300.jpg" class="card-img-top" alt="Movie Image">
+                        <button class="play-button"><i class="bi bi-play-fill"></i></button>
+                        <div class="card-body">
+                            <h5 class="title">John Wick Chapter 4</h5>
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="me-2">4k </span> 
+                                <span class="me-2">2h 30m </span> 
+                                <span class="me-2">Action </span> 
+                                <span class="me-2">19 Dec 2023 </span> 
+                                <span class="ms-auto">⭐ 5.0</span>
+                            </div>
+                            <h6>Story Line</h6>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur. Facilisis lorem consectetur in et ac. Accumsan eu etiam at incidunt. Nisi fusce orci quis in hendrerit ultrices egestas mi. Sed dui aliquet nascetur tellus tellus magna.</p>
+                            <button class="btn btn-reserve">Get Reservation</button>
+                        </div>
+                    </div> -->
+
+
+      </div> 
+  </div>
+   
+    </content>
+
+    <script type="module" src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
